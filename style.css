@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Configuração da primeira sessão */
+.section1{
+    background-image: url("background.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.texto_banner{
+    padding: 30px 20px;
+    width: 100%;
+}
+.texto_topo{
+    margin-bottom: 20px;
+}
+.texto_topo p{
+    color: #47E1FE;
+    margin-bottom: 40px;
+}
+.texto_topo h1{
+    font-size: 40px;
+    color: white;
+}
+.texto_topo strong{
+    color: #47E1FE;
+}
+
+.preco p{
+    margin: 0 0 10px 0;
+    color: #fff;
+}
+.preco .valor{
+    font-size: 30px;
+}
+
+.botao{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background-color: #41adc2;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.botao:hover{
+    background-color: white;
+    color: #41adc2;
+    transition: 0.5s;
+}
+
+.motivacao{
+    text-align: center;
+    color: white;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+}
+video{
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Fim da primeira sessão e início da segunda */
+
+.container2{
+    padding: 20px;
+}
+.container2 strong{
+    color: #41adc2;
+}
+.container2 h1{
+    margin: 10px 0 20px 0;
+    font-size: 30px;
+}
+.container2 h2{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.container2 p {
+    margin-bottom: 20px;
+}
+
+.img_bot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.img_bot img{
+    max-width: 400px;
+    width: 100%;
+}
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+/* INICIO DAS MEDIA QUERIES */
+@media (min-width:932px){
+    .container{
+        max-width: 1160px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .section1{
+        display: flex;
+        justify-content: center;
+    }
+    .texto_banner{
+        padding: 60px;
+    }
+    .video{
+        align-items: center;
+    }
+    video{
+        max-height: 300px;
+    }
+   
+}
+
+@media (min-width:700px){
+    .container2{
+        display: flex;
+        justify-content:space-evenly;
+        max-width: 1160px;
+        margin: 0 auto;
+        padding: 40px 0;
+    }
+    .texto{
+        padding: 30px;
+        max-width: 60%;
+    }
+    .img_bot{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
